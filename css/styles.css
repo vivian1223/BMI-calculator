@@ -1,0 +1,395 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.header{
+    background: #424242;
+    padding-top: 74px;
+    padding-bottom: 74px;
+}
+
+.header-container{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.img-container > img{
+    margin-left: 173px;
+    margin-right: 97px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-container label{
+    color: #FFD366;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+.form-container input{
+    border: 2px #FFD366 solid;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    font-size: 24px;
+    color: #fff;
+    background: rgba(100,100,100,0.18);
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 23px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+/* bmi按鈕 */
+
+.btn-show-bmi{
+    width: 120px;
+    height: 120px;
+    background:#FFD366;
+    border-radius: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 53px;
+   font-size: 24px;
+   color: #424242;
+}
+
+.btn-show-bmi:hover{
+    color: #FFD366;
+    background:#fff;
+}
+
+.btn-show-state{
+    width: 120px;
+    height: 120px;
+    margin-left: 53px;
+    margin-right: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.btn-list{
+    display: flex;
+    align-items: center;
+}
+
+.btn-show-state>img{
+    position: absolute;
+    bottom: 5px;
+    right:8px;
+    z-index: 2;
+}
+
+.btn-green{
+    border: 5px #86D73E  solid;
+    border-radius: 100px;
+    color:#86D73E;
+}
+.btn-green::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #86D73E;
+    border:3px #424242 solid ;
+    border-radius: 100px;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-blue{
+    border: 5px #31BAF9  solid;
+    border-radius: 100px;
+    color:#31BAF9;
+}
+.btn-blue::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #31BAF9;
+    border:3px #424242 solid ;
+    border-radius: 100px;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-FF982D{
+    border: 5px #FF982D  solid;
+    border-radius: 100px;
+    color:#FF982D;
+}
+.btn-FF982D::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #FF982D;
+    border:3px #424242 solid ;
+    border-radius: 100px;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+.btn-FF6C02{
+    border: 5px #FF6C02  solid;
+    border-radius: 100px;
+    color:#FF6C02;
+}
+.btn-FF6C02::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #FF6C02;
+    border:3px #424242 solid ;
+    border-radius: 100px;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+.btn-FF1200{
+    border: 5px #FF1200  solid;
+    border-radius: 100px;
+    color:#FF1200;
+}
+.btn-FF1200::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #FF1200;
+    border:3px #424242 solid ;
+    border-radius: 100px;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+/* font color */
+.c-green{
+    color:#86D73E ;
+}
+.c-blue{
+    color:#31BAF9 ;
+}
+.c-FF982D{
+    color:#FF982D ;
+}
+
+.c-FF6C02{
+    color:#FF6C02;
+}
+.c-FF1200 {
+    color:#FF1200 ;
+}
+
+.c-424242{
+    color: #424242;
+}
+
+
+
+.msg-height,.msg-weight{
+    margin-bottom: 5px;
+}
+
+/* font size */
+
+.fs-32{
+    font-size: 32px;
+    line-height: 1.1;
+}
+
+.fs-24{
+    font-size: 24px;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-15{
+    font-size: 15px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-4{
+    font-size: 4px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+
+.mt-25{
+    display: inline-block;
+    margin-top: 25px;
+}
+.ml-70{
+    margin-left: 70px;
+}
+.ml-15{
+    margin-left: 15px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+
+.mb-25{
+    margin-bottom: 25px;
+}
+
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.title-bmi-record{
+    padding-top: 48px;
+    padding-bottom: 36px;
+}
+.history{
+    background: rgba(100,100,100,0.1) ;
+    padding-bottom: 100px;
+}
+
+.history-container{
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tr-decoration{
+    background: #fff;
+    position: relative;
+    
+}
+
+.tr-green{
+    border-left:5px  #86D73E solid;
+}
+.tr-blue{
+    border-left:5px  #31BAF9  solid;
+}
+
+.tr-FF982D{
+    border-left:5px  #FF982D solid;
+}
+
+.tr-FF6C02{
+    border-left:5px  #FF6C02 solid;
+}
+
+.tr-FF1200{
+    border-left:5px  #FF1200 solid;
+}
+
+/* 刪除全部歷史紀錄之樣式 */
+.delete-history-container{
+    text-align: left;
+}
+
+.btn-delete-history{
+    border-radius: 5px;
+    border: 2px grey solid;
+    padding: 10px;
+    background: #fff;
+}
+.footer{
+    background: #424242;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+

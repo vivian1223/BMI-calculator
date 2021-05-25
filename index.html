@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="header">
+            <div class="header-container">
+                <div class="img-container">
+                    <img src="https://i.imgur.com/OBhfu27.png" alt="Bmi圖片">
+                </div>
+            <form action="">
+                <div class="form-container">
+                    <label for="height">身高 cm</label>
+                    <input type="text" placeholder="請輸入身高" name="height" class="input-height">
+                    <span  class="c-FF1200 msg-height">
+                        <!-- 欄位不能為空！ -->
+                    </span>
+                    <label for="weight">體重 kg</label>
+                    <input type="text" placeholder="請輸入體重" name="weight" class="input-weight">
+                    <span  class="c-FF1200 msg-weight">
+                        <!-- 欄位不能為空！ -->
+                    </span>
+                </div>
+                <div class="btn-list">
+                    <a href="" class="btn-show-bmi">看結果</a>
+                </div>
+                <!-- <a href="" class="btn-show-bmi">看結果</a> -->
+                <!-- <a href="" class="btn-show-state btn-FF1200">
+                    <span class="fs-32">20.90</span>
+                    <span class="fs-4">BMI</span>
+                    <img src="https://i.imgur.com/8Amc343.png" alt="">
+                </a>
+                <span class="fs-32 c-FF1200">輕度肥胖</span> -->
+
+            </form>
+            </div>
+        </div>
+        <div class="history">
+            <div class="history-container">
+                <h1 class="fs-24 c-424242 title-bmi-record">BMI 紀錄</h1>
+                <table class="c-424242 history-list">
+                    <tr class="tr-decoration tr-green">
+                        <td><span class="fs-20 mt-25 ml-15 mb-25">理想</span></td>
+                        <td><span class="fs-12 ml-70">BMI</span><span class="fs-20">20.90</span></td>
+                        <td><span class="fs-12 ml-70">weight</span><span class="fs-20">70kg</span></td>
+                        <td><span class="fs-12 ml-70 ">height</span><span class="fs-20">180cm</span></td>
+                        <td><span class="fs-15 ml-70 mr-20">06-19-2017</span></td>
+                    </tr>
+                </table>
+                <div class="delete-history-container">
+                    <!-- <a href="#" class="fs-15 mt-25 btn-delete-history c-424242">刪除全部</a> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <img src="https://i.imgur.com/OBhfu27.png" alt="">
+        </div>
+    <script src="all.js"></script>
+</body>
+</html>
